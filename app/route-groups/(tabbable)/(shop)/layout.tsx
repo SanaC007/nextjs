@@ -1,5 +1,5 @@
-import { Boundary } from '#/ui/boundary';
-import { ClickCounter } from '#/ui/click-counter';
+import { Boundary } from '@/ui/boundary';
+import { ClickCounter } from '@/ui/click-counter';
 import React from 'react';
 
 export default async function Layout({

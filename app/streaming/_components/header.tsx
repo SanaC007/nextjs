@@ -1,4 +1,4 @@
-import { NextLogoLight } from '#/ui/next-logo';
+import { NextLogoLight } from '@/ui/next-logo';
 import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,

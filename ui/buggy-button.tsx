@@ -1,6 +1,6 @@
-'use client'; // eslint-disable-line
+'use client'; // ! eslint-disable-line
 
-import Button from '#/ui/button';
+import Button from '@/ui/button';
 import React from 'react';
 
 export default function BuggyButton() {

@@ -4,8 +4,8 @@ import ms from 'ms';
 import { useEffect, useRef, useState } from 'react';
 
 // https://github.com/streamich/react-use/blob/master/src/useInterval.ts
-const useInterval = (callback: Function, delay?: number | null) => {
-  const savedCallback = useRef<Function>(() => {});
+const useInterval = (callback: () => void, delay?: number | null) => {
+  const savedCallback = useRef<() => void>(() => {}); // Function
 
   useEffect(() => {
     savedCallback.current = callback;
@@ -19,7 +19,7 @@ const useInterval = (callback: Function, delay?: number | null) => {
 
     return undefined;
   }, [delay]);
-};
+}; // useInterval
 
 export function RenderedTimeAgo({ timestamp }: { timestamp: number }) {
   const [msAgo, setMsAgo] = useState<number>(0);
